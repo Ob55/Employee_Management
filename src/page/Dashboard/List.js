@@ -1,14 +1,12 @@
 import React from 'react';
 
-function List({ employees, handleEdit, handleDelete }) 
-{
+function List({ employees, handleEdit, handleDelete }) {
   const formatter = new Intl.NumberFormat('en-us', {
     style: 'currency',
     currency: 'KES',
     minimumFractionDigits: 0,
   });
 
-  
   return (
     <div className="overflow-x-auto w-screen">
       <table className="w-full border-collapse">
